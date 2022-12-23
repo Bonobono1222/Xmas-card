@@ -1,0 +1,86 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background: url('./images/눈산.jpg') no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.card-christmas > .cover,
+.card-christmas > .inlay {
+	position: fixed;
+	height: 72%;
+	max-height: 600px;
+	width: 80%;
+	max-width: 480px;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 20px;
+
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 20px 60px -20px rgb(0, 0, 0);
+}
+
+.card-christmas > .cover {
+	display: flex;
+	align-items: center;
+	z-index: 9;
+	transition: 1s;
+	background: #ECEFF1 url('./images/홀리데이.jpg') no-repeat center;
+	background-size: cover;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-weight: 900;
+
+}
+
+.card-christmas:hover > .cover {
+	transform: translate(50%, -48%) rotate(2deg);
+	transition: transform 0.5s;
+
+}
+
+.cover .img1 {
+  width: 50%;
+  margin-top: -491px;
+  margin-left: -20px;
+}
+
+.card-christmas > .inlay {
+	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/paper.png");
+  background-size: cover ;
+}
+
+.inlay img {
+  width: 400px;
+  margin-left: 40px;
+  margin-top: -40px;
+  margin-bottom: -60px;
+}
+.inlay p {
+	font-size: 15px;
+	line-height: 26px;
+	font-weight:500;
+  color: #fff;
+  padding-left: 30px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+span {
+  color: chartreuse;
+}
+
+
+.inlay a {
+  text-decoration: none;
+  color: rgba(0, 255, 255, 0.534);
+}
+
+audio {
+  padding-left: 30px;
+}
